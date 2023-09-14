@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500&display=swap');
+
 /* ------------- *
  *   CSS Reset   *
  * ------------- */
@@ -47,6 +49,14 @@ html, body {
     outline: none;
 }
 
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
 /* -------- *
  *   FLEX   *
  * -------- */
@@ -73,6 +83,10 @@ html, body {
     display: grid;
 }
 
+.place-items-center {
+    place-items: center;
+}
+
 /* --------------- *
  *   FLEX / GRID   *
  * --------------- */
@@ -87,3 +101,53 @@ html, body {
 /* --------------- *
  *   APPLICATION   *
  * --------------- */
+h1 {
+    align-self: self-end;
+    margin-bottom: 10rem;
+    max-width: 100rem;
+    font-weight: 500;
+    font-size: clamp(3.5vw, 7rem, 6vw);
+    font-family: 'Unbounded', sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    padding: 4rem;
+    background-color: #E6CCB2;
+}
+
+.backdrop-container {
+    max-width: 60rem;
+    width: 100%;
+}
+
+.shape {
+    display: inline-block;
+    width: 50%;
+    background: linear-gradient(to bottom right, #E0BF9F, #D3A678);
+    aspect-ratio: 1;
+}
+
+.round-br {
+    border-bottom-right-radius: 50%;
+}
+
+.round-bl {
+    border-bottom-left-radius: 50%;
+}
+
+.round-tl {
+    border-top-left-radius: 50%;
+}
+
+.round-tr {
+    border-top-right-radius: 50%;
+}
+
+@media (max-width: 420px) {
+
+    .hero {
+        height: auto;
+    }
+
+}
