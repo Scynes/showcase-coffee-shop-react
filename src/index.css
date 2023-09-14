@@ -119,23 +119,35 @@ html, body {
  *   APPLICATION   *
  * --------------- */
 h1 {
-    align-self: self-end;
-    margin-bottom: 10rem;
     max-width: 100rem;
     font-weight: 500;
-    font-size: clamp(4.5vw, 7rem, 6vw);
+    color: white;
+    font-size: clamp(4.5vw, 14rem, 14vw);
+    text-shadow: 2px 2px 10px black;
+}
+
+.hero h1, .about-hero h2, .stat-card h2, nav {
+    font-size: clamp(4.5vw, 14rem, 14vw);
+    text-shadow: 2px 2px 10px black;
 }
 
 nav {
     z-index: 1;
     position: fixed;
-    padding: 3rem 10rem;
+    padding: 1rem 7rem;
     align-items: center;
+    transition: 0.25s ease-in-out;
+}
+
+nav.scrolling {
+    background: rgba(127, 85, 57, 0.4);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.6px);
 }
 
 nav a {
     font-size: 2rem;
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -148,12 +160,14 @@ p {
 }
 
 .section-wrapper {
-    padding: 5rem 10rem;
+    padding: 10rem;
 }
 
 .hero {
     height: 100vh;
-    background-color: #E6CCB2;
+    background-color: #6c4f3ec6;
+    background-image: url('/public/hero-bg.jpg');
+    background-size: cover;
 }
 
 .about {
@@ -325,18 +339,20 @@ p {
         padding: 1rem;
     }
 
+    nav a {
+        font-size: 1.5rem;
+    }
+
     .hero {
-        height: auto;
+        height: 30rem;
     }
 
     .logo {
         max-width: 4rem;
     }
 
-    h1 {
-        max-width: 30rem;
-        margin-bottom: 2rem;
-        font-size: 3rem;
+    .hero h1 {
+        font-size: 5rem !important;
     }
 
     .section-wrapper {
