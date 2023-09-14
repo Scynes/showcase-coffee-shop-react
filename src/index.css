@@ -199,6 +199,17 @@ p {
     aspect-ratio: 1;
 }
 
+.flower-container {
+    display: grid;
+    width: 10rem;
+    height: 10rem;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+}
+
+.flower {
+    background-color: #7F5539;
+}
+
 .circle {
     border-radius: 100%;
     background: linear-gradient(to bottom right, black, #7F5539);
@@ -285,11 +296,27 @@ p {
 }
 
 .round-tl {
-    border-top-left-radius: 100%;
+    border-top-left-radius: 50%;
 }
 
 .round-tr {
     border-top-right-radius: 50%;
+}
+
+.round-full-br {
+    border-bottom-right-radius: 100%;
+}
+
+.round-full-bl {
+    border-bottom-left-radius: 100%;
+}
+
+.round-full-tl {
+    border-top-left-radius: 100%;
+}
+
+.round-full-tr {
+    border-top-right-radius: 100%;
 }
 
 @media (max-width: 420px) {
