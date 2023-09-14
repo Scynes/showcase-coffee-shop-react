@@ -224,7 +224,7 @@ p {
     background-color: #F2F2F2;
 }
 
-.stat-card > h2, .social-media h2  {
+.stat-card > h2, .social-media h2 {
     font-size: 4.5rem;
 }
 
@@ -239,6 +239,33 @@ p {
 .social-media > p {
     max-width: 56rem;
     line-height: 1.75;
+}
+
+.news-letter {
+    background-color: #E0BF9F;
+}
+
+.news-letter form {
+    max-width: 30rem;
+}
+
+.news-letter form > input, button {
+    width: 100%;
+    height: 4.5rem;
+    border: none;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.news-letter button {
+    background-color: black;
+    color: #E0BF9F;
+}
+
+.news-letter h2 {
+    margin-bottom: 5rem;
+    max-width: 80rem;
+    font-size: clamp(3.5vw, 4.5rem, 5vw);
 }
 
 .quote::before {
