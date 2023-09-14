@@ -1,27 +1,22 @@
-# React + TypeScript + Vite
+# Showcase Coffee Shop Demo Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Coffee Shop Demo](https://github.com/Scynes/showcase-coffee-shop-react/blob/master/public/readme-screenshot.png)
 
-Currently, two official plugins are available:
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Introduction
 
-## Expanding the ESLint configuration
+This is a demo website for a local coffee shop, designed and built using React. It serves as a showcase for the coffee shop's products, menu, and contact information.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+- Browse the coffee shop's menu.
+- View details about each coffee item, including description and price.
+- Contact the coffee shop for inquiries or feedback.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## Technologies Used
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+[![My Skills](https://skillicons.dev/icons?i=react,ts,html,css)](https://skillicons.dev)
