@@ -111,6 +111,10 @@ html, body {
     gap: 2rem;
 }
 
+.gap-4 {
+    gap: 4rem;
+}
+
 /* --------------- *
  *   APPLICATION   *
  * --------------- */
@@ -220,8 +224,21 @@ p {
     background-color: #F2F2F2;
 }
 
-.stat-card > h2 {
+.stat-card > h2, .social-media h2  {
     font-size: 4.5rem;
+}
+
+.social-media h2, h3 {
+    color: #7F5539;
+}
+
+.socials {
+    font-size: 2rem;
+}
+
+.social-media > p {
+    max-width: 56rem;
+    line-height: 1.75;
 }
 
 .quote::before {
@@ -241,7 +258,7 @@ p {
 }
 
 .round-tl {
-    border-top-left-radius: 50%;
+    border-top-left-radius: 100%;
 }
 
 .round-tr {
