@@ -65,6 +65,10 @@ html, body {
     display: flex;
 }
 
+.flex.wrap {
+    flex-wrap: wrap;
+}
+
 .flex.column {
     flex-direction: column;
 }
@@ -103,6 +107,10 @@ html, body {
     justify-content: center;
 }
 
+.gap-2 {
+    gap: 2rem;
+}
+
 /* --------------- *
  *   APPLICATION   *
  * --------------- */
@@ -127,6 +135,10 @@ nav a {
     text-decoration: none;
 }
 
+p {
+    font-size: 1.5rem;
+}
+
 .logo {
     max-width: 7rem;
 }
@@ -140,6 +152,37 @@ nav a {
     background-color: #E6CCB2;
 }
 
+.about {
+    min-height: 60rem;
+    gap: 5rem;
+}
+
+.about-hero img {
+    width: 100%;
+    filter: grayscale(100%) blur(.5px);
+}
+
+.about-hero > h2 {
+    font-size: clamp(4.5vw, 5.5rem, 7vw);
+    max-width: 90rem;
+    color: white;
+}
+
+.about .card {
+  max-width: 40rem;
+}
+
+.about .card > h2 {
+    font-size: 2.5rem;
+}
+
+.about > .card > img {
+    height: 25rem;
+    width: 100%;
+    background-size: cover;
+    border-radius: 2rem;
+}
+
 .backdrop-container {
     max-width: 60rem;
     width: 100%;
@@ -150,6 +193,14 @@ nav a {
     width: 50%;
     background: linear-gradient(to bottom right, #E0BF9F, #D3A678);
     aspect-ratio: 1;
+}
+
+.quote::before {
+    content: open-quote;
+}
+
+.quote::after {
+    content: close-quote;
 }
 
 .round-br {
@@ -191,5 +242,4 @@ nav a {
     .section-wrapper {
         padding: 5rem;
     }
-
 }
