@@ -1,7 +1,7 @@
 const Hero = () => {
 
     return (
-        <section className='hero grid place-items-center relative'>
+        <section className='hero grid place-items-center relative section-wrapper'>
             <div className="backdrop-container">
                 <div className='shape round-tr' />
                 <div className='shape round-br round-bl' />

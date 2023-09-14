@@ -10,6 +10,7 @@
 
 html {
     font-size: 62.5%;
+    font-family: 'Unbounded', sans-serif;
 }
 
 html, body {
@@ -76,6 +77,10 @@ html, body {
     align-items: space-between;
 }
 
+.flex.justify-space-between {
+    justify-content: space-between;
+}
+
 /* -------- *
  *   GRID   *
  * -------- */
@@ -106,13 +111,32 @@ h1 {
     margin-bottom: 10rem;
     max-width: 100rem;
     font-weight: 500;
-    font-size: clamp(3.5vw, 7rem, 6vw);
-    font-family: 'Unbounded', sans-serif;
+    font-size: clamp(4.5vw, 7rem, 6vw);
+}
+
+nav {
+    z-index: 1;
+    position: fixed;
+    padding: 3rem 10rem;
+    align-items: center;
+}
+
+nav a {
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+}
+
+.logo {
+    max-width: 7rem;
+}
+
+.section-wrapper {
+    padding: 5rem 10rem;
 }
 
 .hero {
     height: 100vh;
-    padding: 4rem;
     background-color: #E6CCB2;
 }
 
@@ -146,8 +170,26 @@ h1 {
 
 @media (max-width: 420px) {
 
+    nav {
+        padding: 1rem;
+    }
+
     .hero {
         height: auto;
+    }
+
+    .logo {
+        max-width: 4rem;
+    }
+
+    h1 {
+        max-width: 30rem;
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    }
+
+    .section-wrapper {
+        padding: 5rem;
     }
 
 }
