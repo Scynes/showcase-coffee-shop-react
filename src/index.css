@@ -195,6 +195,35 @@ p {
     aspect-ratio: 1;
 }
 
+.circle {
+    border-radius: 100%;
+    background: linear-gradient(to bottom right, black, #7F5539);
+}
+
+.circle-container {
+    display: grid;
+    width: 10rem;
+    height: 10rem;
+    grid-template: repeat(2, 1fr)/ repeat(2, 1fr);
+}
+
+.stat-card {
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 30rem;
+    padding: 4rem 2rem;
+    border-radius: 2rem;
+    width: 100%;
+    background-color: #F2F2F2;
+}
+
+.stat-card > h2 {
+    font-size: 4.5rem;
+}
+
 .quote::before {
     content: open-quote;
 }
